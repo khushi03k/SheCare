@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mood Log | WH Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>👩‍⚕️ WH Tracker</h2>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="cycle.html">Cycle Tracker</a></li>
+        <li><a href="mood.html">Mood Log</a></li>
+        <li><a href="tips.html">Health Tips</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>😊 Mood Log</h1>
+        <p>Track how you've been feeling each day</p>
+      </header>
+
+      <!-- Mood Cards -->
+      <section class="cards">
+        <div class="card">
+          <h3>📆 Last 3 Days Mood</h3>
+          <p id="recentMoods">--</p>
+        </div>
+        <div class="card">
+          <h3>📊 Average Mood</h3>
+          <p id="averageMood">--</p>
+        </div>
+      </section>
+
+      <!-- Mood Form -->
+      <section class="mood-form">
+        <h3>Log Today's Mood</h3>
+        <form id="moodForm">
+          <label for="moodSelect">Select Your Mood</label>
+          <select id="moodSelect" required>
+            <option value="">--Select--</option>
+            <option value="Happy 😊">Happy 😊</option>
+            <option value="Sad 😢">Sad 😢</option>
+            <option value="Tired 😴">Tired 😴</option>
+            <option value="Energetic 💪">Energetic 💪</option>
+            <option value="Cranky 😒">Cranky 😒</option>
+          </select>
+
+          <button type="submit">Log Mood</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
